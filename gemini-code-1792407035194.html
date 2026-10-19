@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kính Chúc Cô Hiếu - 20/10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0b2318;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #f1f1f1;
+        }
+
+        /* Khung viền ngoài */
+        .wrapper {
+            width: 100%;
+            max-width: 750px;
+            background: #fffdf9;
+            color: #1a1a1a;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            border: 10px double #1b4332;
+            position: relative;
+        }
+
+        .inner-frame {
+            border: 2px solid #b08d57;
+            padding: 35px 30px;
+            position: relative;
+            background: #ffffff;
+        }
+
+        /* Trang trí góc */
+        .corner {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-color: #1b4332;
+            border-style: solid;
+        }
+        .top-left { top: 8px; left: 8px; border-width: 3px 0 0 3px; }
+        .top-right { top: 8px; right: 8px; border-width: 3px 3px 0 0; }
+        .bottom-left { bottom: 8px; left: 8px; border-width: 0 0 3px 3px; }
+        .bottom-right { bottom: 8px; right: 8px; border-width: 0 3px 3px 0; }
+
+        /* Tiêu đề */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .sub-title {
+            font-size: 0.95rem;
+            letter-spacing: 4px;
+            color: #2d6a4f;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .main-title {
+            font-size: 2.8rem;
+            color: #8b0000;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .teacher-name {
+            font-size: 1.5rem;
+            color: #1b4332;
+            font-style: italic;
+        }
+
+        /* Bài thơ 4 câu */
+        .poem-box {
+            background: #f4f9f5;
+            border-left: 4px solid #2d6a4f;
+            padding: 18px 25px;
+            margin: 25px 0;
+            font-style: italic;
+            font-size: 1.15rem;
+            line-height: 2;
+            color: #1b4332;
+            text-align: center;
+        }
+
+        /* Lời chúc */
+        .content {
+            font-size: 1.1rem;
+            line-height: 2.1;
+            color: #2b2b2b;
+            text-align: justify;
+            text-indent: 30px;
+            margin-bottom: 30px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        /* Chân trang */
+        .footer {
+            border-top: 1px dashed #b08d57;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #555;
+            max-width: 60%;
+        }
+
+        .signature {
+            text-align: right;
+        }
+
+        .sig-title {
+            font-size: 0.9rem;
+            color: #2d6a4f;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .sig-name {
+            font-size: 1.6rem;
+            color: #8b0000;
+            font-weight: bold;
+            font-family: 'Times New Roman', serif;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .wrapper { padding: 15px; }
+            .inner-frame { padding: 15px; }
+            .main-title { font-size: 2rem; }
+            .content { font-size: 1rem; }
+            .footer { flex-direction: column; align-items: flex-start; gap: 15px; }
+            .signature { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="inner-frame">
+            <div class="corner top-left"></div>
+            <div class="corner top-right"></div>
+            <div class="corner bottom-left"></div>
+            <div class="corner bottom-right"></div>
+
+            <div class="header">
+                <div class="sub-title">Mừng Ngày Phụ Nữ Việt Nam 20/10</div>
+                <div class="main-title">Kính Chúc Cô Hiếu</div>
+                <div class="teacher-name">Thành Kính Tri Ân Người Bao Bao Dung & Tận Tụy</div>
+            </div>
+
+            <!-- Bài thơ cổ điển -->
+            <div class="poem-box">
+                "Bạc tóc thời gian vơi nét phấn,<br>
+                Ơn sâu nghĩa nặng tựa biển trời.<br>
+                Thuyền đưa bến đậu mầm tri thức,<br>
+                Rạng rỡ tình cô thắm trọn đời."
+            </div>
+
+            <!-- Lời chúc mang chất giáo dục -->
+            <div class="content">
+                <p><strong>Kính gửi Cô Hiếu kính yêu,</strong></p>
+                <p>Nhân ngày Phụ nữ Việt Nam 20/10, chúng em xin phép được gửi tới Cô lời chào trân trọng, lời tri ân chân thành cùng những tình cảm sâu sắc nhất. Cảm ơn Cô đã luôn dành trọn tâm huyết, sự bao dung và tình thương bao la để dìu dắt từng thế hệ học trò trên con đường chinh phục tri thức.</p>
+                <p>Nghề giáo luôn là một hành trình thầm lặng nhưng cao quý. Mọi giọt mồ hôi rơi trên bục giảng, từng nét phấn trắng miệt mài cùng những bài giảng chứa đựng lý tưởng sống của Cô đã trở thành hành trang vô giá, soi sáng cho chúng em bước vào đời.</p>
+                <p>Kính chúc Cô Hiếu một ngày 20/10 ngập tràn niềm vui, dồi dào sức khỏe, luôn giữ vững ngọn lửa nhiệt huyết với nghề và mãi là người lái đò tôn kính trong lòng các thế hệ học sinh!</p>
+            </div>
+
+            <div class="footer">
+                <div class="quote">
+                    "Tôn sư trọng đạo — Trọn vẹn đạo làm người."
+                </div>
+                <div class="signature">
+                    <div class="sig-title">Tập thể học trò</div>
+                    <div class="sig-name">Kính dâng Cô Hiếu</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
